@@ -53,21 +53,20 @@ code {
 
 .content-area {
   width: 70%;
-  background-color: red;
+  background-color: rgb(244, 240, 240);
   height: 100%;
+  color: #282c34;
 }
 
 @media screen and (max-width: 736px) {
-  .App {
-    display: flex;
-    flex-direction: column;
-  }
   .sticky-sidebar {
     width: 100%;
-    height: auto;
+    height: 50em;
   }
   .content-area {
     width: 100%;
     height: auto;
+    position: absolute;
+    margin-top: 30em;
   }
 }
