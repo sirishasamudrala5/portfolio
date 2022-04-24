@@ -1,11 +1,13 @@
-import * as React from 'react'
-import {StickeySideBar, ContentArea} from './components'
+import React, {useState} from 'react'
+import StickeySideBar from './components/StickySideBar'
+import ContentArea from './components/ContentArea'
 import './styles/App.css'
 
 const App = () => {
+  const [curPage, setCurPage] = useState('about')
   return (<div className='App'>
-  <StickeySideBar />
-  <ContentArea />
+  <StickeySideBar setCurPage={setCurPage} />
+  <ContentArea curPage={curPage} />
   </div>
   )
 }

@@ -53,9 +53,9 @@ code {
 
 .content-area {
   width: 70%;
-  background-color: rgb(244, 240, 240);
   height: 100%;
   color: #282c34;
+  padding: 3em;
 }
 
 @media screen and (max-width: 736px) {
@@ -68,5 +68,6 @@ code {
     height: auto;
     position: absolute;
     margin-top: 30em;
+    padding: 1.5em;
   }
 }

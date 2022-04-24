@@ -1,0 +1,8 @@
+#about, #work, #projects{
+    padding: 0em 3em;
+}
+
+.company-link{
+    font-size: 0.625rem;
+    opacity: 0.75;
+}
