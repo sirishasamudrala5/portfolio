@@ -49,6 +49,7 @@ code {
 .sticky-sidebar {
   width: 30%;
   height: 100%;
+  z-index: 1;
 }
 
 .content-area {
