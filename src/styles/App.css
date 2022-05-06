@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,900");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,600;0,700;1,300;1,500&display=swap');
 @import url("fontawesome-all.min.css");
 
 .App {
@@ -34,9 +34,7 @@
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Poppins', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -47,16 +45,22 @@ code {
 }
 
 .sticky-sidebar {
-  width: 30%;
+  width: 35%;
   height: 100%;
   z-index: 1;
 }
 
 .content-area {
-  width: 70%;
+  width: 65%;
   height: 100%;
   color: #282c34;
-  padding: 3em;
+  padding: 2em 5em;
+}
+
+.avatar{
+  width: 50%;
+  height: auto;
+  align-items: center;
 }
 
 @media screen and (max-width: 736px) {

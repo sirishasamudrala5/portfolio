@@ -1,7 +1,13 @@
+.content-area p, li{
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+
 #about, #work, #projects{
     padding: 0em 3em;
 }
 
 #about, #work, #projects{
-    color: #333;
+    color: #1a1d23;
 }

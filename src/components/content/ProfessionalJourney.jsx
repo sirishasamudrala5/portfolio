@@ -42,7 +42,6 @@ const ProfJourney = [{
 const ProfessionalJourney = () => {
     return (<section id="work">
         <h2>My Professional Journey</h2>
-        <p>My current role juggles from leading a diverse team to making critical decisions and initiating new products</p>
         <TimeLine ProfJourney={ProfJourney} />
     </section>)
 }

@@ -1,19 +1,20 @@
 /* Timeline Container */
 .timeline {
     background: var(--primary-color);
-    margin: 20px auto;
-    padding: 20px;
+    margin: 10px auto;
+    padding: 10px;
   }
   
   /* Card container */
   .card {
     position: relative;
-    max-width: 98%;
+    max-width: 98%; 
   }
   
   /* setting padding based on even or odd */
   .card:nth-child(odd) {
     padding: 30px 0 30px 30px;
+   
   }
   .card:nth-child(even) {
     padding: 30px 30px 30px 0;
@@ -22,8 +23,8 @@
   .card::before {
     content: "";
     position: absolute;
-    width: 50%;
-    border: solid rgb(234, 180, 53);
+    width: 49.6%;
+    border: dashed rgb(123, 144, 178);
   }
   
   /* Setting the border of top, bottom, left */
@@ -31,7 +32,7 @@
     left: 0px;
     top: -4.5px;
     bottom: -4.5px;
-    border-width: 5px 0 5px 5px;
+    border-width: 2px 0 2px 2px;
     border-radius: 50px 0 0 50px;
   }
   
@@ -40,7 +41,7 @@
     right: 0;
     top: 0;
     bottom: 0;
-    border-width: 5px 5px 5px 0;
+    border-width: 2px 2px 2px 0;
     border-radius: 0 50px 50px 0;
   }
   
@@ -66,20 +67,29 @@
   .info {
     display: flex;
     flex-direction: column;
-    background: #333;
+    background: #fff;
     color: gray;
-    border-radius: 10px;
+    border-radius: 20px;
     padding: 10px;
+    font-size: 0.8rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  }
+
+  .info p {
+    padding: 0em 1.5em;
   }
   
   /* Title of the card */
   .title {
-    color: rgb(234, 180, 53);
+    color: #333;
     position: relative;
+    font-weight: 600;
+    padding-left: 1em;
+    padding-right: 1em;
   }
 
   .subtitle{
-    color: aliceblue;
+    color: rgb(92, 125, 154);
     font-size: 0.6rem;
   }
   
@@ -87,18 +97,18 @@
   .title::before {
     content: "";
     position: absolute;
-    width: 10px;
-    height: 10px;
+    width: 8px;
+    height: 8px;
     background: white;
     border-radius: 999px;
-    border: 3px solid rgb(234, 180, 53);
+    border: 2px solid #1a1d23;
   }
   
   /* text right if the card is even  */
   .card:nth-child(even) > .info > .title {
     text-align: right;
   }
-  
+ 
   /* setting dot to the left if the card is odd */
   .card:nth-child(odd) > .info > .title::before {
     left: -45px;
@@ -107,4 +117,9 @@
   /* setting dot to the right if the card is odd */
   .card:nth-child(even) > .info > .title::before {
     right: -45px;
+  }
+
+  .role{
+    font-size: 1rem;
+    color: rgb(67, 62, 62);
   }
