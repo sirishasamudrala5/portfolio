@@ -3,7 +3,7 @@ import React from 'react'
 const About = () => {
     return (<section id="about">
         <h2>About me</h2>
-        <p>I am a vivid learner and a vesatile coder with 5+ years of experience in building scalable full-stack Web Apps, Mobile Apps, Desktop Apps, ChatBots and IoT services.</p>
+        <p>I am a vivid learner and a vesatile coder with 6 years of experience in building scalable full-stack Web Apps, Mobile Apps, Desktop Apps, ChatBots and IoT services.</p>
         <p>Currently I work as a Technical Lead for Healthplix Technologies, Bangalore. My role juggles from leading a diverse team to making critical decisions and initiating new products</p>
         <p>I have a BTech from JNTUA university and a PG Diploma in Datascience from INSOFE (upGrad)</p>
         <p>I'm a volunteer and speaker at WomenWhoCode organisation(NGO) | Student event-organiser | Stage host at college | Craft Artist by hobby.</p>

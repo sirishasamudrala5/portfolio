@@ -8,7 +8,7 @@ const StickeySideBar = (props) => {
 			<div id="bg"></div>
 			<div id="main">
 				<header id="header">
-					<img src="avatar.png" alt="Avatar" class="avatar"/>
+					<img src="avatar.png" alt="Avatar" className="avatar"/>
 					<h1>Sirisha Samudrala</h1>
 					<p>Technical Lead &nbsp;&bull;&nbsp; Certified Data Scientist</p>
 				</header>
@@ -17,7 +17,7 @@ const StickeySideBar = (props) => {
 					<li onClick={() => props.setCurPage('about')}>About</li>
 					<li onClick={() => props.setCurPage('work')}>Professional Journey</li>
 					{/* <li onClick={() => props.setCurPage('projects')}>Personal Projects</li> */}
-					{/* <li onClick={() => props.setCurPage('certifications')}>Certifications</li> */}
+					<li onClick={() => props.setCurPage('certifications')}>Certifications</li>
 					<li><a href={myResume} download="Sirisha-Resume.pdf">Download CV</a></li>
 				</ul>
 				</menu>
