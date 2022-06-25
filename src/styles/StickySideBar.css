@@ -316,11 +316,41 @@ a:hover {
     padding: 0;
 }
 
+.menu-small #footer-small{
+    text-align: center;
+}
+#footer-small{
+    bottom: 10em;
+    position: fixed;
+    left: 2em;
+}
+
 #footer nav li {
     -moz-animation: nav-icons 0.5s ease-in-out forwards;
     -webkit-animation: nav-icons 0.5s ease-in-out forwards;
     -ms-animation: nav-icons 0.5s ease-in-out forwards;
     animation: nav-icons 0.5s ease-in-out forwards;
+    -moz-backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-transform: translate3d(0,0,0);
+    -webkit-transform: translate3d(0,0,0);
+    -ms-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+    display: inline-block;
+    height: 3.35em;
+    line-height: 3.35em;
+    opacity: 0;
+    position: relative;
+    width: 3.35em;
+}
+
+#footer-small nav li {
+    -moz-animation: nav-icons 0s ease-in-out forwards;
+    -webkit-animation: nav-icons 0s ease-in-out forwards;
+    -ms-animation: nav-icons 0s ease-in-out forwards;
+    animation: nav-icons 0s ease-in-out forwards;
     -moz-backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
     -ms-backface-visibility: hidden;
@@ -501,8 +531,8 @@ a:hover {
             font-size: 11pt;
         }
         #wrapper, #overlay, #bg {
-            width: 100%;
-            height: 50%;
+            width: 92%;
+            height: 45%;
         }
         #menu {
             position: absolute;
@@ -537,7 +567,10 @@ a:hover {
 @media screen and (max-width: 480px) {
     #footer nav {
         padding: 0 1em;
-    } 
+    }
+    #header{
+        width: 80%;
+    }
 }
 
 .copyright{
@@ -562,6 +595,38 @@ a:hover {
 }
 
 #menu ul{
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.menu-bar{
+    text-align: right;
+}
+
+.menu-bar-opened{
+    color: rgb(123, 144, 178);
+    text-align: right;
+}
+
+.menu-small{
+    z-index: 3;
+    color: #ffffff;
+    height: 80%;
+    top: 6em;
+    position: fixed;
+    width: 100%;
+    background-color: rgb(123, 144, 178);
+}
+
+.menu-small li{
+    color: #fff;
+    opacity: 0.75;
+    text-align: left;
+    padding: 0.3em;
+    font-size: 1.2rem;
+}
+
+.menu-small ul{
     list-style-type: none;
     text-decoration: none;
 }
