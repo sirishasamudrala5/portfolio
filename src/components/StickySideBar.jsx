@@ -1,6 +1,6 @@
 import React from 'react'
 import '../styles/StickySideBar.css'
-import myResume from './Resume.pdf'
+import myResume from '../static/Resume.pdf'
 
 const StickeySideBar = (props) => {
 	return (<div className='sticky-sidebar'>
@@ -17,7 +17,7 @@ const StickeySideBar = (props) => {
 					<li onClick={() => props.setCurPage('about')}>About</li>
 					<li onClick={() => props.setCurPage('work')}>Professional Journey</li>
 					{/* <li onClick={() => props.setCurPage('projects')}>Personal Projects</li> */}
-					<li onClick={() => props.setCurPage('certifications')}>Certifications</li>
+					{/* <li onClick={() => props.setCurPage('certifications')}>Certifications</li> */}
 					<li><a href={myResume} download="Sirisha-Resume.pdf">Download CV</a></li>
 				</ul>
 				</menu>

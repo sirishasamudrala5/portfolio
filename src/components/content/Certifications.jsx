@@ -1,5 +1,5 @@
 import React from 'react'
-import ImageGallery from 'react-image-gallery'
+// import ImageGallery from 'react-image-gallery'
 
 const certificationsData = {
     images : [
@@ -38,12 +38,12 @@ const certificationsData = {
 const Certifications = () => {
     return (<section id="certifications">
         <div className='c-gallery'>
-            <ImageGallery 
+            {/* <ImageGallery 
             items={certificationsData.images}
             showPlayButton={false}
             autoPlay={true}
             showNav={false}
-            />
+            /> */}
         </div>
         <h2>My Certifications:</h2>
         <div className='c-info'>

@@ -5,7 +5,7 @@ const TimeLine = (props) => {
     const children = []
     if(props.ProfJourney){
       props.ProfJourney.map((item, key) => (
-      children.push(<div className="card">
+      children.push(<div className="card" key={key}>
       <div className="info">
         <h2 className="title">{item.title}</h2>
         
