@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "9d8ad4f5ea20546d92aa",
+    "revision": "a97e4b0bbaef119a3f7d",
     "url": "/portfolio/static/css/main.3dac158c.chunk.css"
   },
   {
-    "revision": "9d8ad4f5ea20546d92aa",
-    "url": "/portfolio/static/js/main.9d8ad4f5.chunk.js"
+    "revision": "a97e4b0bbaef119a3f7d",
+    "url": "/portfolio/static/js/main.a97e4b0b.chunk.js"
   },
   {
     "revision": "05a8e767b6b683ee5dc9",
@@ -44,12 +44,12 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/fa-regular-400.b0e2db3b.eot"
   },
   {
-    "revision": "b91d376b8d7646d671cd820950d5f7f1",
-    "url": "/portfolio/static/media/fa-regular-400.b91d376b.woff2"
-  },
-  {
     "revision": "513aa607d398efaccc559916c3431403",
     "url": "/portfolio/static/media/fa-brands-400.513aa607.ttf"
+  },
+  {
+    "revision": "b91d376b8d7646d671cd820950d5f7f1",
+    "url": "/portfolio/static/media/fa-regular-400.b91d376b.woff2"
   },
   {
     "revision": "d1d7e3b4c219fde0f7376c6facfd7149",
@@ -64,20 +64,20 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/fa-regular-400.c5d109be.svg"
   },
   {
-    "revision": "d824df7eb2e268626a2dd9a6a741ac4e",
-    "url": "/portfolio/static/media/fa-solid-900.d824df7e.woff2"
-  },
-  {
-    "revision": "b9625119ce4300f0ef890a8f3234c773",
-    "url": "/portfolio/static/media/fa-solid-900.b9625119.ttf"
-  },
-  {
     "revision": "0c6bfc668a72935760178f91327aed3a",
     "url": "/portfolio/static/media/fa-solid-900.0c6bfc66.eot"
   },
   {
     "revision": "d745348d289b149026921f197929a893",
     "url": "/portfolio/static/media/fa-solid-900.d745348d.woff"
+  },
+  {
+    "revision": "d824df7eb2e268626a2dd9a6a741ac4e",
+    "url": "/portfolio/static/media/fa-solid-900.d824df7e.woff2"
+  },
+  {
+    "revision": "b9625119ce4300f0ef890a8f3234c773",
+    "url": "/portfolio/static/media/fa-solid-900.b9625119.ttf"
   },
   {
     "revision": "1d5619cd804367cefe6da2d79289218a",
@@ -88,7 +88,7 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/fa-solid-900.37bc7099.svg"
   },
   {
-    "revision": "682b83a731f061e5d98b7101223b0ad4",
+    "revision": "449ebb0c33998a71dfb7d2c09d772cd5",
     "url": "/portfolio/index.html"
   }
 ];
