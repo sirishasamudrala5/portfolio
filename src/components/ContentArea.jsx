@@ -10,7 +10,7 @@ const ContentArea = (props) => {
   return (<div className='content-area'>
     {props.curPage === 'about' && <About />}
     {props.curPage === 'work' && <ProfessionalJourney />}
-    {props.curPage === 'projects' && <PersonalProjects />}
+    {/* {props.curPage === 'projects' && <PersonalProjects />} */}
     {props.curPage === 'certifications' && <Certifications />}
     {props.curPage === 'blog' && <Blog />}
   </div>
