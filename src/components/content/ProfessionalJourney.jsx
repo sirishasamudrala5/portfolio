@@ -6,7 +6,7 @@ const ProfJourney = [{
     journey: `Aug 2021 - Present`,
     link: `https://healthplix.pro`,
     role: `Technical Lead`, 
-    content: `Proposed and working towards Micro FE + Micro Services Architechture | Built EMR Offline MVP, leading the team for features development (ElectronJS, React JS, TypeScript, WatermelonDB, MySQL, MongoDB) | OCR feature in EMR | Doctor referral program | React SPA to preview and download prescriptions | presInitiated Internship program | Technical Hiring`
+    content: `Proposed and working towards Micro FE + Micro Services Architechture | Built EMR Offline MVP, leading the team for features development (ElectronJS, React JS, TypeScript, WatermelonDB, MySQL, MongoDB) | OCR feature in EMR | Doctor Referral Program | React SPA to Download Prescriptions | Product Updates, Release Notes | Initiated Internship program | Technical Hiring`
 },{
     title: `JustDial`,
     journey: `MAY 2021 - AUG 2021`,
