@@ -33,7 +33,7 @@ const Certifications = (props) => {
     certificationsData.images.map((item, key) => (
       children.push(
         <div key={key}>
-        <img src={item.src} />
+        <img src={item.src} alt={item.description} />
         <p className="legend">{item.description}</p>
     </div>
       )
