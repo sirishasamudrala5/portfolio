@@ -47,32 +47,57 @@ code {
 .sticky-sidebar {
   width: 35%;
   height: 100%;
-  z-index: 1;
+  z-index: 7;
 }
 
 .content-area {
   width: 65%;
   height: 100%;
   color: #282c34;
-  padding: 2em 5em;
+  padding: 2em 2em 3em 3em;
 }
 
 .avatar{
-  width: 50%;
+  width: 40%;
   height: auto;
   align-items: center;
 }
 
-@media screen and (max-width: 736px) {
+@media screen and (max-width: 768px) {
   .sticky-sidebar {
-    width: 100%;
+    width: inherit;
     height: 50em;
   }
   .content-area {
-    width: 100%;
     height: auto;
     position: absolute;
-    margin-top: 30em;
+    margin-top: 18em;
     padding: 1.5em;
+  }
+  .avatar{
+    width: 6em;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .sticky-sidebar {
+    height: 35%;
+  }
+  .avatar{
+    width: 6em;
+  }
+}
+
+
+
+@media screen and (max-width: 540px) {
+  .content-area {
+    margin-top: 30em;
+  }
+  .avatar{
+    width: 8em;
+  }
+  .menu-small{
+    font-size: 1rem;
   }
 }

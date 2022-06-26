@@ -6,14 +6,30 @@
 }
 
 
-#about, #work, #projects{
-    padding: 0em 3em;
-}
-
-#about, #work, #projects{
+#about, #work, #projects, #certifications{
+    padding: 2em 3em;
     color: #1a1d23;
 }
 
-#certifications{
-    color: #1a1d23;
+@media screen and (max-width: 768px) {
+    #about, #work, #projects, #certifications{
+        padding: 0em 1em;
+    }
+    #certifications{
+        width: 90%;
+        margin-left: 2em;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    #certifications{
+        width: 100%;
+    }
+}
+
+.carousel .control-dots{
+    z-index: auto;
+}
+
+.carousel .control-arrow, .carousel.carousel-slider .control-arrow {
+    z-index: auto;
 }

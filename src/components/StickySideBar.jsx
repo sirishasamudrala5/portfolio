@@ -6,12 +6,14 @@ import DefaultMenu from './menu/DefaultMenu'
 import SmallMenu from './menu/SmallMenu'
 
 var mql = ''
+var mql_landscape = ''
+
 
 if (typeof window !== "undefined") { 
-    mql = window.matchMedia('(max-width: 800px)'); 
+    mql = window.matchMedia('(max-width: 800px)');
+	mql_landscape = window.matchMedia('(max-height: 600px)') 
 }
-let mobileView = mql.matches;
-console.log("mobileView", mobileView)
+let mobileView = mql.matches || mql_landscape.matches;
 
 const StickeySideBar = (props) => {
 	const [showMenu, setShowMenu] = useState(false)

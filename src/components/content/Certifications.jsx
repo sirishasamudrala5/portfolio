@@ -43,7 +43,7 @@ const Certifications = (props) => {
 
     return (<section id="certifications">
            {render_cert()}
-        <h2>My Certifications:</h2>
+        <h2>My Certifications</h2>
         <div className='c-info'>
             <ul>
             <li>Aug 2019 : From AWS : Machine Learning on AWS</li>
