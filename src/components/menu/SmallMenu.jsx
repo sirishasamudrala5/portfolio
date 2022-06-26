@@ -7,7 +7,7 @@ const SmallMenu = (props) => {
         <li onClick={() => {props.setCurPage('about'); props.setShowMenu(false)} }>About</li>
         <li onClick={() => {props.setCurPage('work'); props.setShowMenu(false)} }>Professional Journey</li>
         {/* <li onClick={() => {props.setCurPage('projects') ; props.setShowMenu(false)}}>Personal Projects</li> */}
-        {/* <li onClick={() => {props.setCurPage('certifications') ; props.setShowMenu(false)}}>Certifications</li> */}
+        <li onClick={() => {props.setCurPage('certifications') ; props.setShowMenu(false)}}>Certifications</li>
         <li onClick={()=> props.setShowMenu(false)}><a href={myResume} download="Sirisha-Resume.pdf">Download CV</a></li>
     </ul>
     <footer id="footer-small">

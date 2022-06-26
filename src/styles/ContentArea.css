@@ -17,25 +17,3 @@
 #certifications{
     color: #1a1d23;
 }
-
-.c-gallery{
-    background-color: rgba(238, 238, 238,0.8);
-    padding: 2em 0em;
-    width: 95%;
-}
-
-.c-gallery .image-gallery-slide{
-    height: 500px;
-}
-
-.c-gallery .image-gallery-slide .image-gallery-image{
-    height: 100%;
-}
-
-.c-gallery .image-gallery-slide .image-gallery-description{
-    bottom: 90%;
-}
-
-.c-gallery .image-gallery-fullscreen-button{
-    bottom: 90%;
-}

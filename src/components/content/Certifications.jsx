@@ -1,50 +1,48 @@
 import React from 'react'
-// import ImageGallery from 'react-image-gallery'
+import { Carousel } from 'react-responsive-carousel'
+import "react-responsive-carousel/lib/styles/carousel.min.css"
 
 const certificationsData = {
     images : [
           {
-            original: 'images/certifications/c1.png',
-            thumbnail: 'images/certifications/c1.png',
+            src: 'images/certifications/c1.png',
             description: 'Aug 2019: Machine Learning on AWS',
-            thumbnailHeight: "80px"
           },
           {
-            original: 'images/certifications/c2.png',
-            thumbnail: 'images/certifications/c2.png',
+            src: 'images/certifications/c2.png',
             description: 'Nov 2019: AWS Technical Professional',
-            thumbnailHeight: "80px"
           },
           {
-            original: 'images/certifications/c3.png',
-            thumbnail: 'images/certifications/c3.png',
+            src: 'images/certifications/c3.png',
             description: 'Nov 2019: PG Certificate in DataScience',
-            thumbnailHeight: "80px"
           },
           {
-            original: 'images/certifications/c4.png',
-            thumbnail: 'images/certifications/c4.png',
+            src: 'images/certifications/c4.png',
             description: 'May 2022: The Complete Developers Guide [GoLang]',
-            thumbnailHeight: "80px"
           },
           {
-            original: 'images/certifications/c5.png',
-            thumbnail: 'images/certifications/c5.png',
+            src: 'images/certifications/c5.png',
             description: 'May 2022: gRPC [GoLang] Master Class',
-            thumbnailHeight: "80px"
           },
     ]
 } 
-const Certifications = () => {
+const Certifications = (props) => {
+
+  const render_cert = () => {
+    const children = []
+    certificationsData.images.map((item, key) => (
+      children.push(
+        <div key={key}>
+        <img src={item.src} />
+        <p className="legend">{item.description}</p>
+    </div>
+      )
+      ))
+    return(<Carousel showArrows={true}>{children}</Carousel>)
+  }
+
     return (<section id="certifications">
-        <div className='c-gallery'>
-            {/* <ImageGallery 
-            items={certificationsData.images}
-            showPlayButton={false}
-            autoPlay={true}
-            showNav={false}
-            /> */}
-        </div>
+           {render_cert()}
         <h2>My Certifications:</h2>
         <div className='c-info'>
             <ul>
