@@ -38,7 +38,7 @@ const Certifications = (props) => {
     </div>
       )
       ))
-    return(<Carousel showArrows={true}>{children}</Carousel>)
+    return(<Carousel showArrows={true} autoPlay={true}>{children}</Carousel>)
   }
 
     return (<section id="certifications">
