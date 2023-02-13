@@ -4,7 +4,7 @@
   "private": true,
   "author": {
     "name": "sirisha",
-    "email": "sirisha.samudrala15@gmil.com"
+    "email": "sirisha.samudrala15@gmail.com"
   },
   "homepage": "https://sirishasamudrala5.github.io/portfolio",
   "keywords": [
@@ -12,6 +12,8 @@
     "sirisha samudrala",
     "sirisha pv",
     "technical lead",
+    "project manager",
+    "engineering manager",
     "web developer",
     "desktop app developer",
     "react native developer",
@@ -21,14 +23,14 @@
     "ML engineer",
     "react",
     "python",
-    "go lang",
+    "go",
     "kafka",
     "echo",
     "typescript",
     "chatbot",
     "flask",
-    "node js",
-    "electron js"
+    "nodejs",
+    "electronjs"
   ],
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",

@@ -365,6 +365,7 @@ a:hover {
     opacity: 0;
     position: relative;
     width: 3.35em;
+    padding: 0;
 }
 
 #footer nav li:nth-child(1) {
@@ -656,4 +657,24 @@ a:hover {
         bottom: 3em;
     }
 
+}
+
+.downloadBtn{
+    background-color: #007bff;
+    border-color: #007bff;
+    color: white;
+    padding:0.5em 1.125em;
+    border-radius: 1.75em;
+    margin-top: 1em;
+    font-size: small;
+}
+
+.downloadBtnSmall{
+    background-color: #007bff;
+    border-color: #007bff;
+    color: white;
+    padding:0.5em 1.125em;
+    border-radius: 1.75em;
+    margin-top: 2em;
+    font-size: small;
 }

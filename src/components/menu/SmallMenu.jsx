@@ -8,7 +8,7 @@ const SmallMenu = (props) => {
         <li onClick={() => {props.setCurPage('work'); props.setShowMenu(false)} }>Professional Journey</li>
         {/* <li onClick={() => {props.setCurPage('projects') ; props.setShowMenu(false)}}>Personal Projects</li> */}
         <li onClick={() => {props.setCurPage('certifications') ; props.setShowMenu(false)}}>Certifications</li>
-        <li onClick={()=> props.setShowMenu(false)}><a href={myResume} download="Sirisha-Resume.pdf">Download CV</a></li>
+        <li onClick={()=> props.setShowMenu(false)}><a href={myResume} download="Sirisha-Resume.pdf" className="downloadBtnSmall">Download CV</a></li>
     </ul>
     <footer id="footer-small">
         <nav>
@@ -18,6 +18,7 @@ const SmallMenu = (props) => {
                 <li><a href="mailto:sirisha.samudrala15@gmail.com" className="icon solid fa-envelope"><span className="label">Email</span></a></li>
                 <li><a href="tel:9398991565" className="icon solid fa-phone"><span className="label">Mobile</span></a></li>
             </ul>
+           
         </nav>
         <div className="copyright"><span className="icon solid fa-map-marker"><span className="label">Location</span></span> &nbsp;Bangalore, Karnataka, India</div>
     </footer>

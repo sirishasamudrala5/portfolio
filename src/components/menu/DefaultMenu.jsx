@@ -8,8 +8,8 @@ const DefaultMenu = (props) => {
         <li onClick={() => props.setCurPage('work')}>Professional Journey</li>
         {/* <li onClick={() => props.setCurPage('projects')}>Personal Projects</li> */}
         <li onClick={() => props.setCurPage('certifications')}>Certifications</li>
-        <li><a href={myResume} download="Sirisha-Resume.pdf">Download CV</a></li>
     </ul>
+    <a href={myResume} download="Sirisha-Resume.pdf" className="downloadBtn">Download CV</a>
     </menu>
 
     <footer id="footer">
