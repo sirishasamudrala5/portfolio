@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
 a {
     -moz-transition: border-color 0.2s ease-in-out;
     -webkit-transition: border-color 0.2s ease-in-out;
@@ -500,6 +502,25 @@ a:hover {
     position: absolute;
     text-align: center;
     width: 100%;
+}
+
+.experience{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.75em;
+}
+
+#exp-yrs{
+    font-size: 2rem;
+    font-weight: 800;
+    font-family: 'Montserrat', sans-serif;
+    background:linear-gradient(270deg, #b472dbff, #a480dfff, #9fa0e2ff, #9ae2edff, #aaf6eaff, #b3ffe9ff);
+    -webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+#exp-title{
+    letter-spacing: 0.2em;
 }
 
 /* Wide */

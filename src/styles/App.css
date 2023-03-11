@@ -55,7 +55,6 @@ code {
   width: 65%;
   height: 100%;
   color: #282c34;
-  padding: 0em 3em;
 }
 
 .avatar{
@@ -73,7 +72,6 @@ code {
     height: auto;
     position: absolute;
     margin-top: 18em;
-    padding: 1.5em;
     width: 95%;
   }
   .avatar{

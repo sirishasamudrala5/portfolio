@@ -4,6 +4,7 @@ import '../styles/StickySideBar.css'
 
 import DefaultMenu from './menu/DefaultMenu'
 import SmallMenu from './menu/SmallMenu'
+import CountUp from 'react-countup'
 
 var mql = ''
 var mql_landscape = ''
@@ -25,6 +26,16 @@ const StickeySideBar = (props) => {
 				{mobileView && <h2 className={showMenu ? 'menu-bar-opened' : 'menu-bar'}><i className="fa fa-th-large" aria-hidden="true" onClick={() => setShowMenu(!showMenu)}></i></h2>}
 					<img src="avatar.png" alt="Avatar" className="avatar"/>
 					<h1>Sirisha Samudrala</h1>
+					<div className='experience'><span id='exp-yrs'>
+						<CountUp
+						start={0.0}
+						end={6.7}
+						duration={3}
+						separator=" "
+						decimals={1}
+						decimal="."
+						/> Years</span>
+						<span id='exp-title'>EXPERIENCE</span></div>
 					<p>Technical Lead &nbsp;&bull;&nbsp; Certified Data Scientist</p>
 				</header>
 				{!mobileView && <DefaultMenu {...props} />}
