@@ -4,10 +4,11 @@ import myResume from '../../static/Resume.pdf'
 const SmallMenu = (props) => {
     return(<div className='menu-small'>
     <ul>
-        <li onClick={() => {props.setCurPage('about'); props.setShowMenu(false)} }>About</li>
-        <li onClick={() => {props.setCurPage('work'); props.setShowMenu(false)} }>Professional Journey</li>
-        {/* <li onClick={() => {props.setCurPage('projects') ; props.setShowMenu(false)}}>Personal Projects</li> */}
-        <li onClick={() => {props.setCurPage('certifications') ; props.setShowMenu(false)}}>Certifications</li>
+        <li className={`${props.curPage === 'about' ? 'activeMenuItem': ''}`} onClick={() => {props.setCurPage('about'); props.setShowMenu(false)} }>About</li>
+        <li className={`${props.curPage === 'work' ? 'activeMenuItem': ''}`} onClick={() => {props.setCurPage('work'); props.setShowMenu(false)} }>Professional Journey</li>
+        {/* <li className={`${props.curPage === 'projects' ? 'activeMenuItem': ''}`} onClick={() => {props.setCurPage('projects') ; props.setShowMenu(false)}}>Personal Projects</li> */}
+        <li className={`${props.curPage === 'certifications' ? 'activeMenuItem': ''}`} onClick={() => {props.setCurPage('certifications') ; props.setShowMenu(false)}}>Certifications</li>
+        <li className={`${props.curPage === 'casestudies' ? 'activeMenuItem': ''}`} onClick={() => {props.setCurPage('casestudies') ; props.setShowMenu(false)}}>Case Studies</li>
         <li onClick={()=> props.setShowMenu(false)}><a href={myResume} download="Sirisha-Resume.pdf" className="downloadBtnSmall">Download CV</a></li>
     </ul>
     <footer id="footer-small">

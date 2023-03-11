@@ -1,13 +1,50 @@
 import React from 'react'
 
+const techstackData = [
+    {
+        src: 'images/tech/typescript.png',
+        description: 'typescript',
+    },
+    {
+        src: 'images/tech/react.png',
+        description: 'react',
+    },
+    {
+        src: 'images/tech/python.png',
+        description: 'python',
+    },
+        {
+        src: 'images/tech/nodejs.png',
+        description: 'nodejs',
+    },
+    {
+        src: 'images/tech/golang.png',
+        description: 'golang',
+    },
+    
+]
 const About = () => {
+    const render_techstack = () => {
+        const children = []
+        techstackData.map((item, key) => (
+          children.push(
+            <div className="tech" key={key}>
+            <img  className="tech-icon" src={item.src} alt={item.description} />
+        </div>
+          )
+          ))
+        return(<div className='techstack'>{children}</div>)
+      }
+
     return (<section id="about">
+        <div className='open-to-work'><h2>Open to Opportunities</h2><p>Assistant/Associate Engineering Manager | Sr Tech Lead</p></div>
+        <p align="center">Preferred Techstack</p>{render_techstack()}
         <h2>About me</h2>
-        <p>I am a Technical Lead, vivid learner and a vesatile coder with 6.6+ years with a strong record of building an efficient team.</p>
-        <p>Currently working for Healthplix Technologies. Empowering the team driven by the values of growth, diversity and balance.</p>
-        <p>I'm proficient in handling architectural changes, following Agile methodology and polishing code quality of the team.</p>
-        <p>I have a BTech from JNTUA university and a PG Diploma in Datascience from INSOFE (upGrad)</p>
-        <p>I'm a volunteer and speaker at WomenWhoCode organisation(NGO) | Student event-organiser | Stage host at college | Craft Artist by hobby.</p>
+        <p>Technical Lead, vivid learner and a vesatile coder with 6.6+ years with a strong record of building an efficient team.</p>
+        <p>Currently working at Healthplix, a health-tech startup. Empowering the team driven by the values of growth, diversity and balance.</p>
+        <p>Proficient in handling architectural changes, following Agile methodology and polishing code quality of the team.</p>
+        <p>BTech from JNTU University, PG Diploma in Datascience from Carnegie Mellon University[INSOFE]</p>
+        <p>Volunteer and speaker at WomenWhoCode organisation(NGO) | Craft Artist by hobby.</p>
         <h5>My Skillset</h5>
         <ul>
             <li>React JS, Electron JS, TypeScript, Javascript, Next JS, React native</li>

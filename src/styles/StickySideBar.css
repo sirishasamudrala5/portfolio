@@ -606,7 +606,7 @@ a:hover {
 }
 
 .menu-bar-opened{
-    color: rgb(123, 144, 178);
+    color: rgb(50 59 73);
     text-align: right;
     margin: 0;
 }
@@ -618,7 +618,7 @@ a:hover {
     top: 3.5em;
     position: fixed;
     width: 100%;
-    background-color: rgb(123, 144, 178);
+    background-color: rgb(50 59 73);
 }
 
 .menu-small li{
@@ -677,4 +677,10 @@ a:hover {
     border-radius: 1.75em;
     margin-top: 2em;
     font-size: small;
+}
+
+.activeMenuItem{
+    font-weight: 700;
+    font-size: large;
+    transition: all 0.3s ease-in-out;
 }

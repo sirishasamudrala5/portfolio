@@ -4,10 +4,11 @@ import myResume from '../../static/Resume.pdf'
 const DefaultMenu = (props) => {
     return(<><menu id="menu">
     <ul>
-        <li onClick={() => props.setCurPage('about')}>About</li>
-        <li onClick={() => props.setCurPage('work')}>Professional Journey</li>
-        {/* <li onClick={() => props.setCurPage('projects')}>Personal Projects</li> */}
-        <li onClick={() => props.setCurPage('certifications')}>Certifications</li>
+        <li className={`${props.curPage === 'about' ? 'activeMenuItem': ''}`} onClick={() => props.setCurPage('about')}>About</li>
+        <li className={`${props.curPage === 'work' ? 'activeMenuItem': ''}`} onClick={() => props.setCurPage('work')}>Professional Journey</li>
+        {/* <li className={`${props.curPage === 'projects' ? 'activeMenuItem': ''}`} onClick={() => props.setCurPage('projects')}>Personal Projects</li> */}
+        <li className={`${props.curPage === 'certifications' ? 'activeMenuItem': ''}`} onClick={() => props.setCurPage('certifications')}>Certifications</li>
+        <li className={`${props.curPage === 'casestudies' ? 'activeMenuItem': ''}`} onClick={() => props.setCurPage('casestudies')}>Case Studies</li>
     </ul>
     <a href={myResume} download="Sirisha-Resume.pdf" className="downloadBtn">Download CV</a>
     </menu>

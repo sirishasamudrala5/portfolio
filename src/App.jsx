@@ -6,7 +6,7 @@ import './styles/App.css'
 const App = () => {
   const [curPage, setCurPage] = useState('about')
   return (<div className='App'>
-  <StickeySideBar setCurPage={setCurPage} />
+  <StickeySideBar setCurPage={setCurPage} curPage={curPage} />
   <ContentArea curPage={curPage} />
   </div>
   )

@@ -4,6 +4,7 @@
 .App {
   display: flex;
   flex-direction: row;
+  height: 100vh;
 }
 
 .App-logo {
@@ -54,7 +55,7 @@ code {
   width: 65%;
   height: 100%;
   color: #282c34;
-  padding: 2em 2em 3em 3em;
+  padding: 0em 3em;
 }
 
 .avatar{
@@ -73,6 +74,7 @@ code {
     position: absolute;
     margin-top: 18em;
     padding: 1.5em;
+    width: 95%;
   }
   .avatar{
     width: 6em;

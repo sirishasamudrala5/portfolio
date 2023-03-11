@@ -1,5 +1,8 @@
 /* @import "~react-image-gallery/styles/css/image-gallery.css"; */
 
+.content-area{
+    height: 100vh;
+}
 .content-area p, li{
     font-size: 0.9rem;
     font-weight: 400;
@@ -11,17 +14,71 @@
     color: #1a1d23;
 }
 
+section{
+    height: 100vh;
+}
+
+.casestudy-iframe{
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: 80vh;
+}
+
+.open-to-work{
+    background:linear-gradient(270deg, #b472dbff, #a480dfff, #9fa0e2ff, #98bce8ff, #95caecff, #92d9eeff, #9ae2edff, #a1ececff, #aaf6eaff, #b3ffe9ff);
+    padding: 0.75em 0;
+    border-radius: 0.5em;
+    text-align: center;
+    color: white;
+    bottom: 2em;
+    position:static;
+    margin: 2em;
+}
+.open-to-work p {
+    font-weight: 600;
+}
+
+.techstack{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.techstack .tech{
+    /* padding: 1em; */
+    margin: 0.3em 1em;
+    border-radius: 0.5em;
+    background-color: white;
+    border-radius: 1em;
+    width: 5em;
+    height: 5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    box-shadow: 2px 5px 5px 2px rgba(53, 63, 68, 0.08);
+}
+.techstack .tech .tech-icon{
+    width: auto;
+    height: 4em;
+}
+
 @media screen and (max-width: 768px) {
-    #about, #work, #projects, #certifications{
+    #about, #work, #projects, #certifications #casestudies{
         padding: 0em 1em;
     }
-    #certifications{
+    #certifications #casestudies{
         width: 90%;
         margin-left: 2em;
     }
+    .casestudy-iframe{
+        height: 40vh;
+    }
   }
   @media screen and (max-width: 480px) {
-    #certifications{
+    #certifications #casestudies{
+        width: 100%;
+    }
+    section{
         width: 100%;
     }
 }
@@ -33,3 +90,4 @@
 .carousel .control-arrow, .carousel.carousel-slider .control-arrow {
     z-index: auto;
 }
+
