@@ -30,7 +30,9 @@
     "chatbot",
     "flask",
     "nodejs",
-    "electronjs"
+    "electronjs",
+    "open to work engineering manager",
+    "open to work"
   ],
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",

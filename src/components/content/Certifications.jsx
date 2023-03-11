@@ -24,6 +24,10 @@ const certificationsData = {
             src: 'images/certifications/c5.png',
             description: 'May 2022: gRPC [GoLang] Master Class',
           },
+          {
+            src: 'images/certifications/c6.png',
+            description: 'Feb 2023: Geektrust Coding Challenge [ReactJs]',
+          },
     ]
 } 
 const Certifications = (props) => {

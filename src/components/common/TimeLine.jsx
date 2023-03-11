@@ -9,8 +9,11 @@ const TimeLine = (props) => {
       <div className="info">
         <h2 className="title">{item.title}</h2>
         
-        <p className="role">{item.role} <span className="subtitle">[{item.journey}]</span></p>
+        <p className="role">{item.role}</p>
+        <p className="subtitle">[{item.journey}]</p>
+        <br />
         <p>{item.content}</p>
+        <br />
       </div>
     </div>)
       ))

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins&display=swap');
+
 /* Timeline Container */
 .timeline {
     background: var(--primary-color);
@@ -8,60 +10,17 @@
   /* Card container */
   .card {
     position: relative;
-    max-width: 98%; 
+    max-width: 85%; 
+    padding: 1em;
   }
   
-  /* setting padding based on even or odd */
-  .card:nth-child(odd) {
-    padding: 30px 0 30px 30px;
-   
-  }
-  .card:nth-child(even) {
-    padding: 30px 30px 30px 0;
-  }
   /* Global ::before */
   .card::before {
     content: "";
     position: absolute;
     width: 49.6%;
-    border: dashed rgb(123, 144, 178);
   }
-  
-  /* Setting the border of top, bottom, left */
-  .card:nth-child(odd)::before {
-    left: 0px;
-    top: -4.5px;
-    bottom: -4.5px;
-    border-width: 2px 0 2px 2px;
-    border-radius: 50px 0 0 50px;
-  }
-  
-  /* Setting the border of top, bottom, right */
-  .card:nth-child(even)::before {
-    right: 0;
-    top: 0;
-    bottom: 0;
-    border-width: 2px 2px 2px 0;
-    border-radius: 0 50px 50px 0;
-  }
-  
-  /* Removing the border if it is the first card */
-  .card:first-child::before {
-    border-top: 0;
-    border-top-left-radius: 0;
-  }
-  
-  /* Removing the border if it is the last card  and it's odd */
-  .card:last-child:nth-child(odd)::before {
-    border-bottom: 0;
-    border-bottom-left-radius: 0;
-  }
-  
-  /* Removing the border if it is the last card  and it's even */
-  .card:last-child:nth-child(even)::before {
-    border-bottom: 0;
-    border-bottom-right-radius: 0;
-  }
+ 
   
   /* Information about the timeline */
   .info {
@@ -72,11 +31,12 @@
     border-radius: 20px;
     padding: 10px;
     font-size: 0.8rem;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    box-shadow:rgba(53, 63, 68, 0.08) 0px 50px 100px -20px, rgba(53, 63, 68, 0.08) 0px 30px 60px -30px;
   }
 
   .info p {
     padding: 0em 1.5em;
+    margin: 0;
   }
   
   /* Title of the card */
@@ -90,36 +50,17 @@
 
   .subtitle{
     color: rgb(92, 125, 154);
-    font-size: 0.6rem;
+    font-size: 0.4rem;
   }
   
-  /* Timeline dot  */
-  .title::before {
-    content: "";
-    position: absolute;
-    width: 8px;
-    height: 8px;
-    background: white;
-    border-radius: 999px;
-    border: 2px solid #1a1d23;
-  }
   
   /* text right if the card is even  */
   .card:nth-child(even) > .info > .title {
-    text-align: right;
-  }
- 
-  /* setting dot to the left if the card is odd */
-  .card:nth-child(odd) > .info > .title::before {
-    left: -45px;
-  }
-  
-  /* setting dot to the right if the card is odd */
-  .card:nth-child(even) > .info > .title::before {
-    right: -45px;
+    text-align: left;
   }
 
   .role{
     font-size: 1rem;
+    font-weight: 500;
     color: rgb(67, 62, 62);
   }
