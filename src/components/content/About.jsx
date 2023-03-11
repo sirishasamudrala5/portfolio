@@ -28,8 +28,9 @@ const About = () => {
         const children = []
         techstackData.map((item, key) => (
           children.push(
-            <div className="tech" key={key}>
+            <div className="tech tooltip" key={key}>
             <img  className="tech-icon" src={item.src} alt={item.description} />
+            <span className="tooltiptext">{item.description}</span>
         </div>
           )
           ))
