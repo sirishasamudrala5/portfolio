@@ -26,7 +26,7 @@ section{
 
 .open-to-work{
     background:linear-gradient(270deg, #b472dbff, #a480dfff, #9fa0e2ff, #98bce8ff, #95caecff, #92d9eeff, #9ae2edff, #a1ececff, #aaf6eaff, #b3ffe9ff);
-    padding: 0.75em 0;
+    padding: 0.75em;
     border-radius: 0.5em;
     text-align: center;
     color: white;
@@ -72,6 +72,14 @@ section{
     }
     .casestudy-iframe{
         height: 40vh;
+    }
+    .techstack{
+        margin: 0 1em;
+    }
+    .techstack .tech{
+        margin: 0.15em;
+        width: 4em;
+        height: 4em;
     }
   }
   @media screen and (max-width: 480px) {
