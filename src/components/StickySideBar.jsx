@@ -25,7 +25,7 @@ const StickeySideBar = (props) => {
 				<header id="header">
 				{mobileView && <h2 className={showMenu ? 'menu-bar-opened' : 'menu-bar'}><i className="fa fa-th-large" aria-hidden="true" onClick={() => setShowMenu(!showMenu)}></i></h2>}
 					<img src="avatar.png" alt="Avatar" className="avatar"/>
-					<h1>Sirisha Samudrala</h1>
+					<h1>Sirisha P V</h1>
 					<div className='experience'><span id='exp-yrs'>
 						<CountUp
 						start={0.0}
@@ -36,7 +36,7 @@ const StickeySideBar = (props) => {
 						decimal="."
 						/> Years</span>
 						<span id='exp-title'>EXPERIENCE</span></div>
-					<p>Technical Lead &nbsp;&bull;&nbsp; Certified Data Scientist</p>
+					<p>Technical Lead &nbsp;&bull;&nbsp; Data Scientist</p>
 				</header>
 				{!mobileView && <DefaultMenu {...props} />}
 				{showMenu &&<SmallMenu {...props} setShowMenu={setShowMenu} />}

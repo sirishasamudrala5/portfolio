@@ -1,6 +1,9 @@
 import React from 'react'
+import Typewriter from 'typewriter-effect'
 
-const techstackData = [
+const AboutTags =  [ "a techie by day.", "a dog mom.", "a startup enthusiast.", "your best hire!"]
+
+const TechstackData = [
     {
         src: 'images/tech/typescript.png',
         description: 'typescript',
@@ -23,10 +26,32 @@ const techstackData = [
     },
     
 ]
+
+const SkillSetData = [{
+    title: 'FrontEnd',
+    data: 'ReactJs(Redux,Hooks),TypeScript,Javascript,NextJs,ElectronJs,React Native'
+},{
+    title: 'BackEnd',
+    data: 'GoLang(Chi,gRPC),Python(FastAPI,Flask,Django),Node.Js(Express,Loopback3),PHP7(core,Laravel)'
+},{
+    title: 'Database',
+    data: 'MySQL,PostgreSQL,MongoDB,SQLite3,ORMs(SQLAlchemy,MGM,gORM),Websockets'
+},{
+    title: 'Tests & Docs',
+    data: 'Pytest,Jest,Prometheus,Swagger,Postman,Storybook,TailwindCSS,MaterialUI,Ant,Bootstrap3,SCSS'
+},{
+    title: 'DevOps/Cloud',
+    data: 'Docker,Jenkins,Okta,AWS(S3,CloudFront,Route53,EC2,ECS,CodePipelines,Lambda,Cloudwatch),SAP(UI5,HANA),GCP(FireBase,DataStore),SAAS(SSO,JWT Tokens,Casbin - RBAC)'
+},{
+    title: 'Others',
+    data: 'Dialogflow,NLP,ML,IoT,Tensorflow,Etherium network'
+
+}]
+
 const About = () => {
     const render_techstack = () => {
         const children = []
-        techstackData.map((item, key) => (
+        TechstackData.map((item, key) => (
           children.push(
             <div className="tech tooltip" key={key}>
             <img  className="tech-icon" src={item.src} alt={item.description} />
@@ -35,29 +60,37 @@ const About = () => {
           )
           ))
         return(<div className='techstack'>{children}</div>)
-      }
+    }
+
+    const render_skillset = () => {
+        const children = []
+        SkillSetData.map((item, key) => (
+          children.push(
+            <div className="card" key={key}>
+                <div className="info">
+                <h3 className="header">{item.title}</h3>
+                <p>{item.data}</p>
+            </div>
+        </div>
+          )
+          ))
+        return(<div className='skillset'>{children}</div>)
+    }
 
     return (<section id="about">
         <div className='open-to-work'><h2>Open to Opportunities</h2><p>Assistant/Associate Engineering Manager | Sr Tech Lead</p></div>
         <p align="center">Preferred Techstack</p>{render_techstack()}
-        <h2>About me</h2>
-        <p>Technical Lead, vivid learner and a vesatile coder with 6.6+ years with a strong record of building an efficient team.</p>
-        <p>Currently working at Healthplix, a health-tech startup. Empowering the team driven by the values of growth, diversity and balance.</p>
-        <p>Proficient in handling architectural changes, following Agile methodology and polishing code quality of the team.</p>
-        <p>BTech from JNTU University, PG Diploma in Datascience from Carnegie Mellon University[INSOFE]</p>
-        <p>Volunteer and speaker at WomenWhoCode organisation(NGO) | Craft Artist by hobby.</p>
-        <h5>My Skillset</h5>
-        <ul>
-            <li>React JS, Electron JS, TypeScript, Javascript, Next JS, React native</li>
-            <li>Python(Flask, Django), Node JS, GoLang, PHP(core, Laravel)</li>
-            <li>MySQL, PostgreSQL, MongoDB, JSONLD</li>
-            <li>Pytest, Jest, Prometheus, Swagger, Postman</li>
-            <li>SAAS, SSO, JWT, Websocket, Restful, gRPC, PubSub, Okta, Casbin</li>
-            <li>Dialogflow, NLP, ML, Tensorflow, IoT, Etherium network</li>
-            <li>Docker, Jenkins, AWS CodePipeline</li>
-            <li>SAP(UI5, HANA, IoT), AWS(S3, Cloudfront, Route53, EC2, Lambda, API Gateway, Cloudwatch), GCP(Firestore, DataStore)</li>
-        </ul>
-        <p>Exploring ErLang and Flutter in my free time</p>
+        <br />
+        <div className='about-container'>
+            <div className='card about-container-col about-card'>
+            <div className='info'>
+                <h2 className='title'>I'm <Typewriter options={{ strings: AboutTags, autoStart: true, delay: 75, loop: true}} cursor /></h2>
+                <p className='about-content'>With 6.7+ years of experience and a proven track record of developing productive teams, I am a Technical Lead at the health-tech firm Healthplix. In addition to being skilled at managing architectural changes, adhering to Agile principles, and enhancing code quality, I have a strong passion for growth, diversity, and balance. I have a BTech from JNTU University, a PG Diploma in Datascience from Carnegie Mellon University, and I volunteer and speak at the WomenWhoCode organisation. In my spare time, I enjoy making crafts.</p>
+            </div>
+            </div>
+            <div className='about-container-col'>{render_skillset()}</div>
+        </div>
+        
 </section>)
 }
 

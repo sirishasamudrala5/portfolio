@@ -99,7 +99,7 @@ a:hover {
     opacity: 0;
     position: fixed;
     top: 0;
-    width: 35%;
+    width: 20%;
     text-align: center;
     color: #fff;
 }
@@ -498,7 +498,7 @@ a:hover {
     cursor: default;
     height: auto;
     left: 0;
-    line-height: 8em;
+    line-height: 6em;
     position: absolute;
     text-align: center;
     width: 100%;
@@ -523,10 +523,11 @@ a:hover {
     letter-spacing: 0.2em;
 }
 
+
 /* Wide */
 
 @media screen and (max-width: 1680px) {
-    body, input, select, textarea {
+    body, input, select, textarea #menu{
         font-size: 13pt;
     } 
 }
@@ -534,7 +535,7 @@ a:hover {
 /* Normal */
 
 @media screen and (max-width: 1280px) {
-    body, input, select, textarea {
+    body, input, select, textarea #menu {
         font-size: 12pt;
     }
 }
@@ -612,10 +613,17 @@ a:hover {
 #menu li{
     color: #fff;
     opacity: 0.75;
-    text-align: left;
+    text-align: center;
     padding: 0.3em;
 }
 
+#menu {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
 #menu ul{
     list-style-type: none;
     text-decoration: none;
@@ -645,7 +653,6 @@ a:hover {
 .menu-small li{
     color: #fff;
     opacity: 0.75;
-    text-align: left;
     padding: 0.3em;
     font-size: 1.2rem;
 }
@@ -704,4 +711,14 @@ a:hover {
     font-weight: 700;
     font-size: large;
     transition: all 0.3s ease-in-out;
+}
+
+@media screen and (max-height: 912px) {
+    #menu {
+        padding: 2em;
+        font-size: small;
+    }
+    #footer{
+        line-height: 4em;
+    }
 }
