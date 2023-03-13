@@ -238,11 +238,10 @@ a:hover {
 }
 
 #footer-small{
-    margin-top: 5em;
     font-size: small;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
+    position: fixed;
+    bottom: 3em;
+    left: 22.5%;
 }
 
 #footer nav li {
@@ -598,18 +597,16 @@ a:hover {
 }
 
 .menu-bar-opened{
-    color: rgb(50 59 73);
     text-align: right;
     margin: 0;
+    margin: 1em 1em 0em 0em;
+    font-size: 1.25em;
 }
 
 .menu-small{
-    z-index: 9;
+    z-index: 8;
     color: #ffffff;
-    height: 50%;
-    top: 2.5em;
-    padding-top: 1em;
-
+    height: 100%;
     position: fixed;
     width: 100%;
     background-color: #282c34;
@@ -637,7 +634,7 @@ a:hover {
 
 @media screen and (max-width: 768px) {
     #header {
-        padding-left: 2em;
+        padding: 2em 0em 2em 2em;
         justify-content: space-between;
     }
     #header h1 {
@@ -645,8 +642,6 @@ a:hover {
     }
     .menu-bar{
         margin: 1em 1em 0em 0em;
-    }
-    .menu-bar{
         font-size: 1.25em;
     }
     #exp-yrs{
@@ -697,8 +692,10 @@ a:hover {
     color: white;
     padding:0.5em 1.125em;
     border-radius: 1.75em;
-    margin-top: 2em;
     font-size: small;
+    position: absolute;
+    left: 34.33%;
+    top: 15em;
 }
 
 .activeMenuItem{

@@ -2,15 +2,19 @@ import React from 'react'
 import myResume from '../../static/Resume.pdf'
 
 const SmallMenu = (props) => {
-    return(<div className='menu-small'>
+    return(
+    <div className='menu-small'>
+    <h2 className={'menu-bar-opened'}><i className="fa fa-th-large" aria-hidden="true" onClick={() => props.setShowMenu(false)}></i></h2>
     <ul>
         <li className={`${props.curPage === 'about' ? 'activeMenuItem': ''}`} onClick={() => {props.setCurPage('about'); props.setShowMenu(false)} }>About</li>
         <li className={`${props.curPage === 'work' ? 'activeMenuItem': ''}`} onClick={() => {props.setCurPage('work'); props.setShowMenu(false)} }>Work</li>
         {/* <li className={`${props.curPage === 'projects' ? 'activeMenuItem': ''}`} onClick={() => {props.setCurPage('projects') ; props.setShowMenu(false)}}>Personal Projects</li> */}
         <li className={`${props.curPage === 'certifications' ? 'activeMenuItem': ''}`} onClick={() => {props.setCurPage('certifications') ; props.setShowMenu(false)}}>Certifications</li>
         <li className={`${props.curPage === 'casestudies' ? 'activeMenuItem': ''}`} onClick={() => {props.setCurPage('casestudies') ; props.setShowMenu(false)}}>Case Studies</li>
-        <li onClick={()=> props.setShowMenu(false)}><a href={myResume} download="Sirisha-Resume.pdf" className="downloadBtnSmall">Download CV</a></li>
+        {/* <li onClick={()=> props.setShowMenu(false)}><a href={myResume} download="Sirisha-Resume.pdf" className="downloadBtnSmall">Download CV</a></li> */}
     </ul>
+    <a href={myResume} download="Sirisha-Resume.pdf" className="downloadBtnSmall">Download CV</a>
+
     <footer id="footer-small">
         <nav>
             <ul>

@@ -1,5 +1,6 @@
 .content-area{
     height: 100vh;
+    overflow-y: scroll;
 }
 .content-area p, li{
     font-size: 0.9rem;
@@ -147,14 +148,28 @@ section{
     top: 100%;
   }
   
-  .tooltip:hover .tooltiptext {
+.tooltip:hover .tooltiptext {
     visibility: visible;
+}
+
+.c-info ul {
+    list-style: none;
+  }
+  
+.c-info ul li::before {
+    content: "| ";
+    color: #4d4f52;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
   }
 
-  @media screen and (max-width: 1180px) {
+@media screen and (max-width: 1180px ) {
     #about, #certifications, #casestudies{
         width: 90%;
     }
+    
 }
 
   @media screen and (max-height: 912px) {
@@ -220,9 +235,13 @@ section{
     }
     .open-to-work p{
         font-size: small;
+        margin: 0;
     }
   }
   @media screen and (max-width: 480px) {
+    .content-area{
+        overflow-y: unset;
+    }
     #certifications, #casestudies{
         width: 80%;
     }
@@ -231,5 +250,8 @@ section{
     }
     .skillset .card{
         width: 100%;
-      }
+    }
+    .techstack .tech .tech-icon{
+        height: 3em;
+    }
 }

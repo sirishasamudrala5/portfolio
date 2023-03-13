@@ -38,7 +38,7 @@ const Certifications = (props) => {
       children.push(
         <div key={key}>
         <img src={item.src} alt={item.description} />
-        <p className="legend">{item.description}</p>
+        {/* <p className="legend">{item.description}</p> */}
     </div>
       )
       ))
@@ -49,14 +49,14 @@ const Certifications = (props) => {
            {render_cert()}
         <h2>Certifications</h2>
         <div className='c-info'>
-            <ul>
-            <li>Aug 2019 : From AWS : Machine Learning on AWS</li>
-            <li>Nov 2019 : From AWS : AWS Technical Professional</li>
-            <li>Nov 2019 : From INSOFE : Post-graduate Gertificate in DataScience</li>
-            <li>May 2022 : From Udemy : The Complete Developers Guide [GoLang]</li>
-            <li>May 2022 : From Udemy : gRPC [GoLang] Master Class</li>
-            </ul>
+          <p>Aug 2019: Machine Learning on AWS</p>
+          <p>Nov 2019: AWS Technical Professional</p>
+          <p>Nov 2019: PG Diploma in Data Science</p>
+          <p>May 2022: The Complete Developers Guide [GoLang]</p>
+          <p>May 2022: gRPC [GoLang] Master Class</p>
+          <p>Feb 2023: GeekTrust Coding Challenge[React]</p>
         </div>
+        <br />
      </section>)
 }
 
