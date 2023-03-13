@@ -151,6 +151,12 @@ section{
     visibility: visible;
   }
 
+  @media screen and (max-width: 1180px) {
+    #about, #certifications, #casestudies{
+        width: 90%;
+    }
+}
+
   @media screen and (max-height: 912px) {
     .about-container{
         flex-direction: column;
@@ -182,9 +188,13 @@ section{
     .skillset .info{
         height: auto;
     }
+    section{
+        width: 100%;
+    }
+    .skillset .card{
+        width: 100%;
+      }
   }
-
-
 @media screen and (max-width: 768px) {
     #about, #work, #projects, #certifications #casestudies{
         padding: 0em 0.5em;
@@ -207,10 +217,13 @@ section{
     .skillset .info{
         height: auto;
     }
+    .open-to-work p{
+        font-size: small;
+    }
   }
   @media screen and (max-width: 480px) {
-    #certifications #casestudies{
-        width: 100%;
+    #certifications, #casestudies{
+        width: 80%;
     }
     section{
         width: 100%;

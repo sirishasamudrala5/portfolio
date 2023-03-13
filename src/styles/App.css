@@ -60,7 +60,7 @@ code {
   width: 80%;
   height: 100%;
   color: #282c34;
-  overflow: scroll;
+  overflow-y: scroll;
 }
 
 .avatar{
@@ -69,29 +69,28 @@ code {
 }
 
 @media screen and (max-width: 768px) {
+  .App{
+    flex-direction: column;
+  }
   .sticky-sidebar {
     width: 100%;
-    height: 50em;
+    height: 24%;
+    flex-direction: row-reverse;
   }
   .content-area {
     width: 100%;
     height: auto;
-    position: absolute;
   }
 }
 
 @media screen and (max-width: 450px) {
-  .sticky-sidebar {
-    height: 35%;
+  .content-area{
+    padding-top: 1em;
+    bottom: 2em;
   }
 }
 
-
-
 @media screen and (max-width: 540px) {
-  .content-area {
-    margin-top: 30em;
-  }
   .menu-small{
     font-size: 1rem;
   }
