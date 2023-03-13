@@ -22,9 +22,10 @@ const DefaultMenu = (props) => {
                 <li><a href="mailto:sirisha.samudrala15@gmail.com" className="icon solid fa-envelope"><span className="label">Email</span></a></li>
                 <li><a href="tel:9398991565" className="icon solid fa-phone"><span className="label">Mobile</span></a></li>
             </ul>
+            <div className="copyright"><span className="icon solid fa-map-marker"><span className="label">Location</span></span> &nbsp;Bangalore, Karnataka, India</div>
         </nav>
-        <div className="copyright"><span className="icon solid fa-map-marker"><span className="label">Location</span></span> &nbsp;Bangalore, Karnataka, India</div>
-    </footer></>)
+    </footer>
+    </>)
 } 
 
 export default DefaultMenu

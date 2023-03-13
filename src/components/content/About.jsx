@@ -1,7 +1,7 @@
 import React from 'react'
 import Typewriter from 'typewriter-effect'
 
-const AboutTags =  [ "a techie by day.", "a dog mom.", "a startup enthusiast.", "your best hire!"]
+const AboutTags =  [ "a techie by day.", "driven by passion.", "a startup enthusiast.", "your best hire!"]
 
 const TechstackData = [
     {
