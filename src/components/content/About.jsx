@@ -29,22 +29,22 @@ const TechstackData = [
 
 const SkillSetData = [{
     title: 'FrontEnd',
-    data: 'ReactJs(Redux,Hooks),TypeScript,Javascript,NextJs,ElectronJs,React Native'
+    data: 'ReactJs(Redux, Hooks), TypeScript, Javascript, NextJs, ElectronJs, React Native'
 },{
     title: 'BackEnd',
-    data: 'GoLang(Chi,gRPC),Python(FastAPI,Flask,Django),Node.Js(Express,Loopback3),PHP7(core,Laravel)'
+    data: 'GoLang(Chi, gRPC), Python(FastAPI, Flask, Django), Node.Js(Express, Loopback3), PHP7(core, Laravel)'
 },{
     title: 'Database',
-    data: 'MySQL,PostgreSQL,MongoDB,SQLite3,ORMs(SQLAlchemy,MGM,gORM),Websockets'
+    data: 'MySQL, PostgreSQL, MongoDB, SQLite3, ORMs(SQLAlchemy, MGM, gORM), Websockets'
 },{
     title: 'Tests & Docs',
-    data: 'Pytest,Jest,Prometheus,Swagger,Postman,Storybook,TailwindCSS,MaterialUI,Ant,Bootstrap3,SCSS'
+    data: 'Pytest, Jest, Prometheus, Swagger, Postman, Storybook, TailwindCSS, MaterialUI, Ant, Bootstrap3, SCSS'
 },{
     title: 'DevOps/Cloud',
-    data: 'Docker,Jenkins,Okta,AWS(S3,CloudFront,Route53,EC2,ECS,CodePipelines,Lambda,Cloudwatch),SAP(UI5,HANA),GCP(FireBase,DataStore),SAAS(SSO,JWT Tokens,Casbin - RBAC)'
+    data: 'Docker, Jenkins, Okta, AWS(S3, CloudFront, Route53, EC2, ECS, CodePipelines, Lambda, Cloudwatch), SAAS(SSO, JWT Tokens, Casbin - RBAC)'
 },{
     title: 'Others',
-    data: 'Dialogflow,NLP,ML,IoT,Tensorflow,Etherium network'
+    data: 'Dialogflow, NLP, ML, IoT, Tensorflow, Etherium network'
 
 }]
 
@@ -90,7 +90,6 @@ const About = () => {
             </div>
             <div className='about-container-col'>{render_skillset()}</div>
         </div>
-        
 </section>)
 }
 

@@ -5,6 +5,7 @@
   display: flex;
   flex-direction: row;
   height: 100vh;
+  background-color: #f7fafd;
 }
 
 .App-logo {
@@ -65,17 +66,16 @@ code {
 
 @media screen and (max-width: 768px) {
   .sticky-sidebar {
-    width: inherit;
+    width: 100%;
     height: 50em;
   }
   .content-area {
+    width: 100%;
     height: auto;
     position: absolute;
-    margin-top: 18em;
-    width: 95%;
   }
   .avatar{
-    width: 6em;
+    width: auto;
   }
 }
 
@@ -84,7 +84,7 @@ code {
     height: 35%;
   }
   .avatar{
-    width: 6em;
+    width: auto;
   }
 }
 
@@ -95,7 +95,7 @@ code {
     margin-top: 30em;
   }
   .avatar{
-    width: 8em;
+    width: 4em;
   }
   .menu-small{
     font-size: 1rem;

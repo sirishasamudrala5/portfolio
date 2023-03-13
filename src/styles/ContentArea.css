@@ -1,6 +1,5 @@
 .content-area{
     height: 100vh;
-    background-color: #f7fafd;
 }
 .content-area p, li{
     font-size: 0.9rem;
@@ -23,7 +22,7 @@ section{
 
 .about-container .about-card .info{
     height: 45em;
-    padding: 3em;
+    padding: 2em;
 }
 
 .about-container-col .about-content{
@@ -100,25 +99,25 @@ section{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    height: 43em;
 }
 
 .skillset .info{
-    height: 90%;
+    height: 22em;
 }
 .skillset .card{
     width: 30%;
     margin: 0;
     padding: 1em 0.5em 0.25em 0.25em;
-    text-align: justify;
-    word-wrap: break-word;
 }
 
 .skillset .header {
     color: #1a1d23;
     text-align: center;
-  }
+}
 
+.skillset p {
+    font-size: small;
+}
 
 .carousel .control-dots{
     z-index: auto;
@@ -180,15 +179,16 @@ section{
     .Typewriter{
         font-size: 1.5rem;
     }
+    .skillset .info{
+        height: auto;
+    }
   }
 
 
 @media screen and (max-width: 768px) {
     #about, #work, #projects, #certifications #casestudies{
-        padding: 0em 1em;
-    }
-    #certifications #casestudies{
-        width: 90%;
+        padding: 0em 0.5em;
+        width: inherit;
     }
     .casestudy-iframe{
         height: 40vh;
@@ -203,6 +203,9 @@ section{
     }
     .skillset .card{
         width: 50%;
+    }
+    .skillset .info{
+        height: auto;
     }
   }
   @media screen and (max-width: 480px) {
