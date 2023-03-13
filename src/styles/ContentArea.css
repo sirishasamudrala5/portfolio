@@ -168,6 +168,7 @@ section{
     .about-container-col{
         width: 100%;
         height: auto;
+        padding: 1em;
     }
     .about-container-col .about-content{
         position: relative;

@@ -237,13 +237,12 @@ a:hover {
     padding: 0;
 }
 
-.menu-small #footer-small{
-    text-align: center;
-}
 #footer-small{
-    bottom: 10em;
-    position: fixed;
-    left: 2em;
+    margin-top: 5em;
+    font-size: small;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 
 #footer nav li {
@@ -605,25 +604,35 @@ a:hover {
 }
 
 .menu-small{
-    z-index: 1;
+    z-index: 9;
     color: #ffffff;
-    height: 80%;
-    top: 3.5em;
+    height: 50%;
+    top: 2.5em;
+    padding-top: 1em;
+
     position: fixed;
     width: 100%;
-    background-color: rgb(50 59 73);
+    background-color: #282c34;
 }
 
+.menu-small ul{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+}
 .menu-small li{
     color: #fff;
     opacity: 0.75;
     padding: 0.3em;
-    font-size: 1.2rem;
+    font-size: 1rem;
+    margin: 0;
 }
 
-.menu-small ul{
-    list-style-type: none;
-    text-decoration: none;
+.menu-small span{
+    font-size: small;
+    text-align: center;
 }
 
 @media screen and (max-width: 768px) {

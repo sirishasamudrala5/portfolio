@@ -1,7 +1,7 @@
 import React from 'react'
 import Typewriter from 'typewriter-effect'
 
-const AboutTags =  [ "a techie by day.", "driven by passion.", "a startup enthusiast.", "your best hire!"]
+const AboutTags =  [ "a techie by day.", "driven by passion.", "a startup junkie.", "your best hire!"]
 
 const TechstackData = [
     {
@@ -85,7 +85,7 @@ const About = () => {
             <div className='card about-container-col about-card'>
             <div className='info'>
                 <h2 className='title'>I'm <Typewriter options={{ strings: AboutTags, autoStart: true, delay: 75, loop: true}} cursor /></h2>
-                <p className='about-content'>With 6.7+ years of experience and a proven track record of developing productive teams, I am a Technical Lead at the health-tech firm Healthplix. In addition to being skilled at managing architectural changes, adhering to Agile principles, and enhancing code quality, I have a strong passion for growth, diversity, and balance. I have a BTech from JNTU University, a PG Diploma in Datascience from Carnegie Mellon University, and I volunteer and speak at the WomenWhoCode organisation. In my spare time, I enjoy making crafts.</p>
+                <p className='about-content'>With 6.7+ years of experience and a proven track record of developing productive teams, I am a Technical Lead at the health-tech firm Healthplix. In addition to being skilled at managing architectural changes, adhering to Agile principles, and enhancing code quality, I have a strong passion for growth, diversity, and balance. I have a BTech from JNTU University, a PG Diploma in Datascience from Carnegie Mellon University, and I volunteer and speaker at the WomenWhoCode organisation. In my spare time, I enjoy making crafts.</p>
             </div>
             </div>
             <div className='about-container-col'>{render_skillset()}</div>

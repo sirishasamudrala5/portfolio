@@ -42,7 +42,7 @@ const ProfJourney = [{
 
 const ProfessionalJourney = () => {
     return (<section id="work">
-        <h2>My Professional Journey</h2>
+        <h2>Professional Journey</h2>
         <TimeLine ProfJourney={ProfJourney} />
     </section>)
 }
