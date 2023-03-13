@@ -35,7 +35,7 @@ section{
 .about-card h2{
  font-size: 3rem;
  font-weight: 700;
- padding-top: 2em;
+ padding: 2em 0 0 0.5em ;
 }
 
 .about-container-col{
@@ -171,7 +171,7 @@ section{
         padding-top: 1em ;
     }
     .about-card h2{
-        padding-top: 0em;
+        padding: 0em 0em 0em 1em;
     }
     .about-card h2{
         font-size: 1.5rem;
