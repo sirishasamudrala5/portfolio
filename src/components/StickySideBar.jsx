@@ -19,13 +19,10 @@ let mobileView = mql.matches || mql_landscape.matches;
 const StickeySideBar = (props) => {
 	const [showMenu, setShowMenu] = useState(false)
 	return (<div className='sticky-sidebar'>
-			<div id="wrapper">
-			<div id="bg"></div>
-			<div id="main">
 				<header id="header">
 				{mobileView && <h2 className={showMenu ? 'menu-bar-opened' : 'menu-bar'}><i className="fa fa-th-large" aria-hidden="true" onClick={() => setShowMenu(!showMenu)}></i></h2>}
 					<img src="avatar.png" alt="Avatar" className="avatar"/>
-					<h1>Sirisha P V</h1>
+					<h1>Sirisha S</h1>
 					<div className='experience'><span id='exp-yrs'>
 						<CountUp
 						start={0.0}
@@ -40,9 +37,7 @@ const StickeySideBar = (props) => {
 				</header>
 				{!mobileView && <DefaultMenu {...props} />}
 				{showMenu &&<SmallMenu {...props} setShowMenu={setShowMenu} />}
-			</div>
-			</div>
-	</div>)
+			</div>)
 }
 
 export default StickeySideBar

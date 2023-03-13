@@ -49,19 +49,23 @@ code {
 .sticky-sidebar {
   width: 20%;
   height: 100%;
-  z-index: 7;
+  background-color: #1a1d23;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 .content-area {
   width: 80%;
   height: 100%;
   color: #282c34;
+  overflow: scroll;
 }
 
 .avatar{
-  width: 40%;
+  width: 50%;
   height: auto;
-  align-items: center;
 }
 
 @media screen and (max-width: 768px) {
@@ -74,17 +78,11 @@ code {
     height: auto;
     position: absolute;
   }
-  .avatar{
-    width: auto;
-  }
 }
 
 @media screen and (max-width: 450px) {
   .sticky-sidebar {
     height: 35%;
-  }
-  .avatar{
-    width: auto;
   }
 }
 
@@ -93,9 +91,6 @@ code {
 @media screen and (max-width: 540px) {
   .content-area {
     margin-top: 30em;
-  }
-  .avatar{
-    width: 4em;
   }
   .menu-small{
     font-size: 1rem;
