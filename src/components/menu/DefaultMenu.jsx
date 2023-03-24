@@ -17,8 +17,9 @@ const DefaultMenu = (props) => {
     <footer id="footer">
         <nav>
             <ul>
-                <li><a href="https://www.linkedin.com/in/samudralasirisha/?originalSubdomain=in" className="icon brands fa-linkedin"><span className="label">LinkedIn</span></a></li>
-                <li><a href="https://github.com/sirishasamudrala5" className="icon brands fa-github"><span className="label">Github</span></a></li>
+                <li><a href="https://www.instagram.com/code_g00d/" className="icon brands fa-instagram" target="_blank"><span className="label">Instagram</span></a></li>
+                <li><a href="https://www.linkedin.com/in/samudralasirisha/?originalSubdomain=in" className="icon brands fa-linkedin" target="_blank"><span className="label">LinkedIn</span></a></li>
+                <li><a href="https://github.com/sirishasamudrala5" className="icon brands fa-github" target="_blank"><span className="label">Github</span></a></li>
                 <li><a href="mailto:sirisha.samudrala15@gmail.com" className="icon solid fa-envelope"><span className="label">Email</span></a></li>
                 <li><a href="tel:9398991565" className="icon solid fa-phone"><span className="label">Mobile</span></a></li>
             </ul>

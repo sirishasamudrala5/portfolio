@@ -32,7 +32,9 @@
     "nodejs",
     "electronjs",
     "open to work engineering manager",
-    "open to work"
+    "open to work",
+    "code good",
+    "code_g00d"
   ],
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
