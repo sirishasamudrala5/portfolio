@@ -40,7 +40,7 @@ const Certifications = (props) => {
     </div>
       )
       ))
-    return( <ReactCardCarousel autoplay={ true } autoplay_speed={ 1500 }>{children}</ReactCardCarousel>)
+    return( <ReactCardCarousel autoplay={ true } autoplay_speed={ 2500 }>{children}</ReactCardCarousel>)
   }
 
     return (<section id="certifications">
