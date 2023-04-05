@@ -254,6 +254,7 @@ section{
     }
     .insta-intro{
         margin-right: 0;
+        height: 35em;
     }
   }
 @media screen and (max-width: 768px) {
@@ -291,6 +292,7 @@ section{
     }
     .insta-intro{
         margin-right: 0;
+        height: 40em;
     }
   }
   @media screen and (max-width: 480px) {
@@ -322,5 +324,6 @@ section{
     }
     .insta-intro{
         margin-right: 0;
+        height: 40em;
     }
 }
