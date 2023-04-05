@@ -10,15 +10,10 @@ const TimeLine = (props) => {
       props.ProfJourney.map((item, key) => (
       children.push( 
         <div className="card" key={key}>
-      <div className="info">
-        <h2 className="title">{item.title}</h2>
-          <p className="role">{item.role}</p>
-        <p className="subtitle">[{item.journey}]</p>
-        <br />
-       <CollapsableCard content={item.content} key={key} />
-       <br />
-      </div>
-    </div>)
+          <div className="info">
+          <CollapsableCard data={item} key={key} />
+          </div>
+      </div>)
       ))
     }
     return(<div className="outer">

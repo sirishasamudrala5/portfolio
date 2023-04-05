@@ -2,11 +2,12 @@ import React, { useState } from "react"
 import Collapsible from 'react-collapsible'
 
 const CollapsableCard = (props) => {
-    const [text, setText] = useState(<span>Read more <span className="icon solid fa-caret-down"></span></span>)
-
-    return <Collapsible trigger={text} onOpening={() => setText(<span>Close <span className="icon solid fa-caret-up"></span></span>)} onClosing={() => setText(<span>Read more <span className="icon solid fa-caret-down"></span></span>)}>
-    <br />
-    <p>{props.content}</p>
+    return <Collapsible trigger={[props.data.title, <span className="icon solid fa-caret-down"></span>]} triggerTagName={"h2"} open={props.data.title == "Healthplix" ?  true : false} easing="ease-in-out" transitionTime={600}>
+        <h2 className="title">{props.data.title}</h2>
+          <p className="role">{props.data.role}</p>
+        <p className="subtitle">[{props.data.journey}]</p>
+        <br />
+    <p>{props.data.content}</p>
     <br />
     </Collapsible>
 }
