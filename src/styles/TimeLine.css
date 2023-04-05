@@ -70,9 +70,7 @@
     justify-content: space-between;
     align-items: center;
     color: #333;
-    padding:  1rem 3rem;
-    border: 0 0 1rem 0;
-    border-bottom: aquamarine;
+    padding:  0rem 3rem;
   }
   
   .Collapsible__trigger.is-open span {
