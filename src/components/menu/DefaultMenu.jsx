@@ -8,7 +8,7 @@ const DefaultMenu = (props) => {
         <li className={`${props.curPage === 'work' ? 'activeMenuItem': ''}`} onClick={() => props.setCurPage('work')}>Work</li>
         {/* <li className={`${props.curPage === 'projects' ? 'activeMenuItem': ''}`} onClick={() => props.setCurPage('projects')}>Personal Projects</li> */}
         <li className={`${props.curPage === 'certifications' ? 'activeMenuItem': ''}`} onClick={() => props.setCurPage('certifications')}>Certifications</li>
-        <li className={`${props.curPage === 'casestudies' ? 'activeMenuItem': ''}`} onClick={() => props.setCurPage('casestudies')}>Case Studies</li>
+        {/* <li className={`${props.curPage === 'casestudies' ? 'activeMenuItem': ''}`} onClick={() => props.setCurPage('casestudies')}>Case Studies</li> */}
         <li></li>
         <li><a href={myResume} download="Sirisha-Resume.pdf" className="downloadBtn">Download CV</a></li>
     </ul>

@@ -10,7 +10,7 @@ const SmallMenu = (props) => {
         <li className={`${props.curPage === 'work' ? 'activeMenuItem': ''}`} onClick={() => {props.setCurPage('work'); props.setShowMenu(false)} }>Work</li>
         {/* <li className={`${props.curPage === 'projects' ? 'activeMenuItem': ''}`} onClick={() => {props.setCurPage('projects') ; props.setShowMenu(false)}}>Personal Projects</li> */}
         <li className={`${props.curPage === 'certifications' ? 'activeMenuItem': ''}`} onClick={() => {props.setCurPage('certifications') ; props.setShowMenu(false)}}>Certifications</li>
-        <li className={`${props.curPage === 'casestudies' ? 'activeMenuItem': ''}`} onClick={() => {props.setCurPage('casestudies') ; props.setShowMenu(false)}}>Case Studies</li>
+        {/* <li className={`${props.curPage === 'casestudies' ? 'activeMenuItem': ''}`} onClick={() => {props.setCurPage('casestudies') ; props.setShowMenu(false)}}>Case Studies</li> */}
         {/* <li onClick={()=> props.setShowMenu(false)}><a href={myResume} download="Sirisha-Resume.pdf" className="downloadBtnSmall">Download CV</a></li> */}
     </ul>
     <a href={myResume} download="Sirisha-Resume.pdf" className="downloadBtnSmall">Download CV</a>
