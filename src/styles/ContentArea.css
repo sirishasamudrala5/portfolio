@@ -22,10 +22,20 @@ section{
 }
 
 .about-container .about-card .info{
-    height: 45em;
-    padding: 2em;
+   height: 45em;
+   padding: 2em;
 }
 
+.insta-intro{
+    height: 39em;
+    padding: 1.25em 5em;
+    display: flex;
+    justify-content:center;
+    margin-right: 3em;
+}
+.insta-intro .info{
+    padding: 1.25em 5em;
+}
 .about-container-col .about-content{
     position: absolute;
     bottom: 7em;
@@ -40,7 +50,7 @@ section{
 }
 
 .about-container-col{
-    width: 50%;
+    width: 100%;
 }
 
 .casestudy-iframe{
@@ -103,12 +113,11 @@ section{
 }
 
 .skillset .info{
-    height: 22em;
+    height: 10em;
 }
 .skillset .card{
     width: 30%;
     margin: 0;
-    padding: 1em 0.5em 0.25em 0.25em;
 }
 
 .skillset .header {
@@ -205,7 +214,6 @@ section{
     .about-container-col{
         width: 100%;
         height: auto;
-        padding: 1em;
     }
     .about-container-col .about-content{
         position: relative;
@@ -232,10 +240,20 @@ section{
     }
     .skillset .card{
         width: 100%;
+        margin: 0;
+    }
+    .skillset .card .info{
+        margin: 0;
     }
     .cert-container{
         height: 80%;
         width: 100%;
+    }
+    .insta-intro .info{
+        padding: 1em;
+    }
+    .insta-intro{
+        margin-right: 0;
     }
   }
 @media screen and (max-width: 768px) {
@@ -268,6 +286,12 @@ section{
         height: 60%;
         width: 100%;
     }
+    .insta-intro .info{
+        padding: 1em;
+    }
+    .insta-intro{
+        margin-right: 0;
+    }
   }
   @media screen and (max-width: 480px) {
     .content-area{
@@ -292,5 +316,11 @@ section{
     .carousal-card{
         height: 15em;
         width: 20em;
+    }
+    .insta-intro .info{
+        padding: 1em;
+    }
+    .insta-intro{
+        margin-right: 0;
     }
 }
