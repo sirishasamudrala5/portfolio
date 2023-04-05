@@ -80,6 +80,7 @@ section{
 .open-to-work p{
     font-weight: 500;
     font-size: large;
+    padding: 0.125em;
 }
 
 .techstack{
@@ -267,7 +268,7 @@ section{
     }
     .techstack{
         margin: 0 1em;
-    }
+    }  
     .techstack .tech{
         margin: 0.15em;
         width: 4em;
@@ -282,6 +283,11 @@ section{
     .open-to-work p{
         font-size: small;
         margin: 0;
+        padding: 0.5em;
+    }
+    .open-to-work h2{
+        padding-bottom: 0;
+        margin-bottom: 0;
     }
     .cert-container{
         height: 60%;
