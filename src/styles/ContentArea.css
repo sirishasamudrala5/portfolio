@@ -1,5 +1,5 @@
 .content-area{
-    height: 100vh;
+    height: auto;
     overflow-y: scroll;
 }
 .content-area p, li{
@@ -205,11 +205,12 @@ section{
         height: auto;
     }
     section{
-        width: 100%;
+        width: 80%;
+        overflow: unset;
     }
     .skillset .card{
         width: 100%;
-      }
+    }
   }
 @media screen and (max-width: 768px) {
     #about, #work, #projects, #certifications #casestudies{
@@ -254,4 +255,27 @@ section{
     .techstack .tech .tech-icon{
         height: 3em;
     }
+}
+
+.carousal-card{
+    height: 25em;
+    width: 35em;
+    box-sizing:border-box;
+    background-color: #f7fafd;
+}
+
+.carousal-card img{
+    width: 100%;
+    height: 100%;
+    object-fit:contain;
+}
+
+.cert-container{
+    height:80%;
+    width: auto;
+    display: flex;
+    flex: 1;
+    position: relative;
+    margin: 0;
+    padding: 0;
 }

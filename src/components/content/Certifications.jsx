@@ -1,6 +1,5 @@
 import React from 'react'
-import { Carousel } from 'react-responsive-carousel'
-import "react-responsive-carousel/lib/styles/carousel.min.css"
+import ReactCardCarousel from 'react-card-carousel';
 
 const certificationsData = {
     images : [
@@ -36,27 +35,16 @@ const Certifications = (props) => {
     const children = []
     certificationsData.images.map((item, key) => (
       children.push(
-        <div key={key}>
+        <div key={key} className='carousal-card'>
         <img src={item.src} alt={item.description} />
-        {/* <p className="legend">{item.description}</p> */}
     </div>
       )
       ))
-    return(<Carousel showArrows={true} autoPlay={true}>{children}</Carousel>)
+    return( <ReactCardCarousel autoplay={ true } autoplay_speed={ 1500 }>{children}</ReactCardCarousel>)
   }
 
     return (<section id="certifications">
-           {render_cert()}
-        <h2>Certifications</h2>
-        <div className='c-info'>
-          <p>Aug 2019: Machine Learning on AWS</p>
-          <p>Nov 2019: AWS Technical Professional</p>
-          <p>Nov 2019: PG Diploma in Data Science</p>
-          <p>May 2022: The Complete Developers Guide [GoLang]</p>
-          <p>May 2022: gRPC [GoLang] Master Class</p>
-          <p>Feb 2023: GeekTrust Coding Challenge[React]</p>
-        </div>
-        <br />
+      <div className='cert-container'>{render_cert()}</div>
      </section>)
 }
 
