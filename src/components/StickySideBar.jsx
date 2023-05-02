@@ -27,7 +27,7 @@ const StickeySideBar = (props) => {
 					<div className='experience'><span id='exp-yrs'>
 						<CountUp
 						start={0.0}
-						end={6.8}
+						end={7}
 						duration={3}
 						separator=" "
 						decimals={1}
