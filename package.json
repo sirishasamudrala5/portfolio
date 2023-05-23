@@ -7,6 +7,10 @@
     "email": "sirisha.samudrala15@gmail.com"
   },
   "homepage": "https://sirishasamudrala5.github.io/portfolio/",
+  "repository": { 
+    "type": "git", 
+    "url": "https://github.com/sirishasamudrala5/portfolio.git" 
+  },
   "keywords": [
     "portfolio",
     "sirisha samudrala",
