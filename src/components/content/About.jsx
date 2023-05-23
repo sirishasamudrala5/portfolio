@@ -80,7 +80,9 @@ const About = () => {
     }
 
     return (<section id="about">
-        <div className='open-to-work'><h2>Open to Opportunities</h2><p>Assistant Engineering Manager | Sr Tech Lead</p><p><a href={myResume} download="Sirisha-Resume.pdf" className="downloadBtnCTA">Download Resume &nbsp;<span className="icon solid fa-cloud-download-alt"></span></a></p></div>
+        <div className='open-to-work'><h2>Open to Freelance</h2>
+        {/* <p>Assistant Engineering Manager | Sr Tech Lead</p> */}
+        <p><a href={myResume} download="Sirisha-Resume.pdf" className="downloadBtnCTA">Download Resume &nbsp;<span className="icon solid fa-cloud-download-alt"></span></a></p></div>
         <p align="center">Preferred Techstack</p>{render_techstack()}
         <br />
         <div className='about-container'>

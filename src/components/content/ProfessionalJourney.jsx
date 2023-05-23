@@ -2,8 +2,14 @@ import React from 'react'
 import TimeLine from '../common/TimeLine'
 
 const ProfJourney = [{
+    title: `TATA 1MG`,
+    journey: `APR 2023 - Present`,
+    link: `https://www.1mg.com`,
+    role: `Associate Engineering Manager`, 
+    content: `Handling FinTech Team`
+},{
     title: `Healthplix`,
-    journey: `Aug 2021 - Present`,
+    journey: `AUG 2021 - MAR 2023`,
     link: `https://healthplix.pro`,
     role: `Technical Lead`, 
     content: `Successfully initiated, designed and executing the core product revamp with cutting edge tech [Micro FrontEnds + Micro Services] | Responsible for weekly releases, DB operation requests, Sprint planning, Resource management | Successfully delivered new features to improve user experience and reduce the consultation time [OCR, prescription in SMS, Knowledge repo] | Mentoring Engineering team to up-skill in Go, Python, Typescript, ORMs, micro-front-ends, storybooks UI, TailwindCSS, NodeJs | Successfully designed, executed and delivered doctor referral program which increased lead generation & a multi platform desktop application to increase the throughput of users with limited internet facility | Complete project ownership whilst handling the team of FE and BE engineers and devOps following Agile Methodologies | Perform code reviews to improve code quality and logical thinking of team | Organised team building activities and brown bag sessions to boost our work culture | Crafted Internship programs | Actively aided Technical Hiring`
