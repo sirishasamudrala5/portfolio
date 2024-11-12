@@ -80,7 +80,7 @@ const About = () => {
     }
 
     return (<section id="about">
-        <div className='open-to-work'><h2>Open to Freelance</h2>
+        <div className='open-to-work'><h2>Open to Work</h2>
         {/* <p>Assistant Engineering Manager | Sr Tech Lead</p> */}
         <p><a href={myResume} download="Sirisha-Resume.pdf" className="downloadBtnCTA">Download Resume &nbsp;<span className="icon solid fa-cloud-download-alt"></span></a></p></div>
         <p align="center">Preferred Techstack</p>{render_techstack()}
@@ -89,7 +89,7 @@ const About = () => {
             <div className='card about-container-col about-card'>
             <div className='info'>
                 <h2 className='title'>I'm <Typewriter options={{ strings: AboutTags, autoStart: true, delay: 75, loop: true}} cursor /></h2>
-                <p className='about-content'>With 7+ years of experience and a proven track record of developing productive teams, I am a Technical Lead at the health-tech firm Healthplix. In addition to being skilled at managing architectural changes, adhering to Agile principles, and enhancing code quality, I have a strong passion for growth, diversity, and balance. I have a BTech from JNTU University & a PG Diploma in Data science from Carnegie Mellon University. I'm a volunteer and speaker at the WomenWhoCode organisation. In my spare time, I enjoy making crafts.</p>
+                <p className='about-content'>With 8+ years of experience and a proven track record of developing productive teams, I am a Technical Lead at the health-tech firm Healthplix. In addition to being skilled at managing architectural changes, adhering to Agile principles, and enhancing code quality, I have a strong passion for growth, diversity, and balance. I have a BTech from JNTU University & a PG Diploma in Data science from Carnegie Mellon University. I'm a volunteer and speaker at the WomenWhoCode organisation. In my spare time, I enjoy making crafts.</p>
             </div>
             </div>
             <div className='card insta-intro'>

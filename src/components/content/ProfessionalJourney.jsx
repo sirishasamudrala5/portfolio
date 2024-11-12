@@ -6,7 +6,7 @@ const ProfJourney = [{
     journey: `APR 2023 - Present`,
     link: `https://www.1mg.com`,
     role: `Associate Engineering Manager`, 
-    content: `Handling FinTech Team`
+    content: `My team is responsible for: Seamless transactional data flow into SAP and other BI tools | Collaborate with cross-functional teams to ensure data integrity and availability | Reconciliation of vendor payments | Building a consolidated | Financial data management system | OnCall support to address critical issues for Finance and BI teams. While I take care of balancing their contribution to achieve target deliverables on time. Responsible for defining KPIs, conducting RCAs, Sprint planning, contribute to skill development of team and team expansion.`
 },{
     title: `Healthplix`,
     journey: `AUG 2021 - MAR 2023`,
