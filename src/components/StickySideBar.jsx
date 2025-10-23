@@ -27,14 +27,14 @@ const StickeySideBar = (props) => {
 					<div className='experience'><span id='exp-yrs'>
 						<CountUp
 						start={0.0}
-						end={8.9}
+						end={9.6}
 						duration={3}
 						separator=" "
 						decimals={1}
 						decimal="."
 						/> Years</span>
 						<span id='exp-title'>EXPERIENCE</span></div>
-					<p>Associate Engineering Manager &nbsp;&bull;&nbsp; Data Scientist</p></div>
+					<p>Engineering Manager &nbsp;&bull;&nbsp; Data Scientist</p></div>
 				</header>
 				{!mobileView && <DefaultMenu {...props} />}
 				{showMenu &&<SmallMenu {...props} setShowMenu={setShowMenu} />}

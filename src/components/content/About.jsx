@@ -55,7 +55,7 @@ const About = () => {
         const children = []
         TechstackData.map((item, key) => (
           children.push(
-            <div className="tech tooltip" key={key}>
+            <div className="tech tooltip " key={key}>
             <img  className="tech-icon" src={item.src} alt={item.description} />
             <span className="tooltiptext">{item.description}</span>
         </div>
@@ -89,7 +89,7 @@ const About = () => {
             <div className='card about-container-col about-card'>
             <div className='info'>
                 <h2 className='title'>I'm <Typewriter options={{ strings: AboutTags, autoStart: true, delay: 75, loop: true}} cursor /></h2>
-                <p className='about-content'>With 8+ years of experience and a proven track record of developing productive teams, I am a Technical Lead at the health-tech firm Healthplix. In addition to being skilled at managing architectural changes, adhering to Agile principles, and enhancing code quality, I have a strong passion for growth, diversity, and balance. I have a BTech from JNTU University & a PG Diploma in Data science from Carnegie Mellon University. I'm a volunteer and speaker at the WomenWhoCode organisation. In my spare time, I enjoy making crafts.</p>
+                <p className='about-content'>With 9+ years of experience and a proven track record of developing productive teams, I am working as an Engineering Manager at Modern Spaaces. In addition to being skilled at managing architectural changes, adhering to Agile principles, enhancing code quality and managing people, I have a strong passion for growth, diversity, and balance. I have a BTech from JNTU University & a PG Diploma in Data science from Carnegie Mellon University. I'm a volunteer and speaker at the WomenWhoCode organisation. In my spare time, I enjoy making crafts.</p>
             </div>
             </div>
             <div className='card insta-intro'>

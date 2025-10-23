@@ -2,8 +2,23 @@ import React from 'react'
 import TimeLine from '../common/TimeLine'
 
 const ProfJourney = [{
+    title: `Modern Spaaces`,
+    journey: `FEB 2025 - Present`,
+    link: `https://www.1mg.com`,
+    role: `Engineering Manager`, 
+    content: `Responsible for System design and strategy planning | Working with cross functional stakeholders in the construction workflow | Built CRM dashboard and relevant internal tools  | Responsible for delivering Microsites and mobile apps | Building Tech-pods to improve efficiency | People management and mentoring | Actively aided Technical Hiring
+`
+},
+{
+    title: `Karyah`,
+    journey: `NOV 2023 - JAN 2025`,
+    link: `https://karyah.app`,
+    role: `Co-Founder & CTO`, 
+    content: `Designed and developed the MVP of a prop-Tech SAAS suite  | Involved in strategising GTM plan | Built branding websites for two clients`
+},
+{
     title: `TATA 1MG`,
-    journey: `APR 2023 - Present`,
+    journey: `APR 2023 - OCT 2023`,
     link: `https://www.1mg.com`,
     role: `Associate Engineering Manager`, 
     content: `My team is responsible for: Seamless transactional data flow into SAP and other BI tools | Collaborate with cross-functional teams to ensure data integrity and availability | Reconciliation of vendor payments | Building a consolidated | Financial data management system | OnCall support to address critical issues for Finance and BI teams. While I take care of balancing their contribution to achieve target deliverables on time. Responsible for defining KPIs, conducting RCAs, Sprint planning, contribute to skill development of team and team expansion.`
