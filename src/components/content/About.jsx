@@ -7,6 +7,10 @@ const AboutTags =  [ "@code_g00d", "a techie by day.", "driven by passion.", "a 
 
 const TechstackData = [
     {
+        src: 'images/tech/ai.png',
+        description: 'AI',
+    },
+    {
         src: 'images/tech/typescript.png',
         description: 'typescript',
     },
